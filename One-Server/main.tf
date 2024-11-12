@@ -15,7 +15,7 @@ provider "aws" {
 
 resource "aws_instance" "example" {
   ami           = "ami-0fb653ca2d3203ac1"
-  instance_type = "t3.micro"
+  instance_type = "t2.micro"
   subnet_id = "subnet-07ba1d57e5f47e6c7"
   lifecycle {
     create_before_destroy = true
